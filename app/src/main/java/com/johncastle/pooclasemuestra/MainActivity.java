@@ -5,24 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+
 public class MainActivity extends AppCompatActivity {
-    //this is a monolith
+String estudiante1="Mateo";
+String estudiante2="Josue";
+String estudiante3="Roman";
+String estudiante4="Andres";
+String estudiante5="Rodolfo";
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        String specie="GATO";
-        String name="fluffy";
-        String action="maulla";
-        String skills="trepa";
-
-
-        Log.d("PRINT",specie);
-        Log.d("PRINT",name);
-        Log.d("PRINT",action);
-        Log.d("PRINT",skills);
-    }
 }
+
