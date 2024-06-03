@@ -19,8 +19,10 @@ public class MainActivity extends AppCompatActivity {
     static String estudiante3="Roman";
     static String estudiante4="Andres";
     static String estudiante5="Rodolfo";
-
-    public static void main(String[] args) {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
         String [] estudiantes=llenarEstudiantes();
         mostrarTodosEstudiantes(estudiantes);
@@ -54,13 +56,12 @@ public class MainActivity extends AppCompatActivity {
     // Método para mostrar la información del estudiante
     //TODO IMPRIMIR TODOS LOS VALORES DE LOS ESTUDIATES
     public static void mostrarInformacion(String nombre) {
-        System.out.println("Nombre: " + nombre);
-        System.out.println();
+        Log.d("HOLA","Nombre: " + nombre);
     }
 
     // Método para mostrar la información de todos los estudiantes
     public static void mostrarTodosEstudiantes(String[] estudiantes) {
-        System.out.println("Información de los estudiantes:");
+        Log.d("HOLA","Información de los estudiantes:");
 
         for (String estudiante : estudiantes) {
             mostrarInformacion(estudiante);
